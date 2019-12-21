@@ -22,7 +22,6 @@ class QTree:
         else:
             self.listRoi.append([offX,offY,w,h,m,s])
 
-
     def __init__(self, img, stdmin, sizemin):
         self.listRoi = []
         self.qt(img, stdmin, sizemin, 0, 0)
@@ -60,23 +59,16 @@ def quadtree(inImg, minStd, minSize, offX, offY, roiList):
     else:
         roiList.append([offX,offY,w,h,m,s])
 
-
-
 def main(file_):
     
     parser = argparse.ArgumentParser(description='Calcula los mejores cortes de barras')
-
     parser.add_argument('-img', metavar='', type=str, help='cargar imagen')
-
     parser.add_argument('-sz', metavar='', type=int, help='quadtree tam min ')
-    
     parser.add_argument('-std', metavar='', type=float, help='desviación para dividir')
-
     args = parser.parse_args()
 
     #input valores
     IMAGE_TO_LOAD = args.img
-
     minDev        = args.sz
     minSz         = args.std
     
@@ -111,11 +103,9 @@ def main(file_):
         cv2.rectangle(imgOut, (e[0],e[1]), (e[0]+e[2],e[1]+e[3]), col, 1)
         
     cv2.imshow('IMAGEN QUADTREE',imgOut)
-
     cv2.waitKey(0)
     cv2.destroyAllWindows()
-
-
+                
 if __name__ == '__main__':
     main( sys.argv[1] )
 

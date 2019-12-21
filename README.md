@@ -11,5 +11,7 @@ Compilar:
 $ python pyImgQuadTree.py pato.jpg -sz 20 -std 25.0
 QuadTree aplicado a una imagen de caricatura
 ![img](https://github.com/Arianamilagros/Quad--Tree/blob/master/caricatura1.png) 
+
+
 QuadTree aplicado a una imagen de paisaje
 ![img](https://github.com/Arianamilagros/Quad--Tree/blob/master/paisaje1.png)

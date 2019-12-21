@@ -1,4 +1,6 @@
 # Quad--Tree
+QuadTree aplicado a imagenes como caricatura y paisajes.
+
 Python 2.7.8
 
 Librerias graficas:
